@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/search"
+        android:title="Search"
+        android:icon="@drawable/baseline_search_24"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView"/>
+
+    <item
+        app:showAsAction="always"
+        android:title=" "
+        android:icon="@drawable/baseline_more_vert_24">
+
+        <menu>
+            <item
+                android:id="@+id/profile"
+                android:title="Profile"
+                android:icon="@drawable/baseline_person_24"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/sign_out"
+                android:title="Sign Out"
+                android:icon="@drawable/baseline_logout_24"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+
+</menu>
